@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- Left Sidebar: Filter Section -->
+  <div class="leftSidebar">
+    <div class="sideHeader">
+      <h1>Filters</h1>
+      <img src="./assets/img/filter.png" alt="filterIcon" />
+    </div>
+
+    <div class="sideUsers">
+      <h3>Users</h3>
+      <div class="counter">
+        <img id="user_count_minus" src="./assets/img/minus.png" alt="minusIcon" />
+        <p id="user_count">10</p>
+        <img id="user_count_plus" src="./assets/img/plus.png" alt="plusIcon" />
+      </div>
+    </div>
+
+    <div class="sideRating">
+      <h3>Gender</h3>
+      <div><input type="radio" id="male_filter" name="gender" />
+        <label for="male_filter">Male</label>
+      </div>
+      <div><input type="radio" id="female_filter" name="gender" />
+        <label for="female_filter">Female</label>
+      </div>
+      <div><input type="radio" id="all_gender_filter" name="gender" checked />
+        <label for="all_gender_filter">Show all</label>
+      </div>
+    </div>
+
+    <div class="sideRating">
+      <h3>Sort by</h3>
+      <div>
+        <input type="radio" id="name_sort" name="sort" />
+        <label for="name_sort">Name</label>
+      </div>
+      <div><input type="radio" id="age_sort" name="sort" />
+        <label for="age_sort">Age</label>
+      </div>
+      <div><input type="radio" id="location_sort" name="sort" />
+        <label for="location_sort">Location</label>
+      </div>
+
+
+    </div>
+
+    <div class="sideBudget">
+      <h3>Age</h3>
+      <input type="range" min="10" max="100" value="100" class="slider" id="age_slider" />
+      <div class="sliderInfo">
+        <p>10</p>
+        <p>100</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Container -->
+  <div class="mainContainer">
+    <!-- header -->
+    <div id="header" class="header">
+      <h1>👋👋👋 Good Morning !!!</h1>
+      <p>Personalised Text goes here ...</p>
+    </div>
+
+    <!-- Person Cards -->
+    <div id="cards" class="cardContainer">
+
+    </div>
+  </div>
+
+  <script type="text/javascript" src="./assets/js/index.js"></script>
+
+</body>
+
+</html>
